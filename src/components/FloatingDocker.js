@@ -1,5 +1,5 @@
 "use client";
-import { FloatingDock } from "@Aui/components/ui/floating-dock";
+import { FloatingDock } from "@/components/ui/floating-dock";
 import {
   IconBrandGithub,
   IconBrandX,
@@ -70,12 +70,9 @@ function FloatingDocker() {
     },
   ];
   return (
-    <div className="fixed bottom-0 w-full">
-      <div className="flex items-center justify-center h-[15rem] w-full">
-        <FloatingDock
-          mobileClassName="translate-y-20" // only for demo, remove for production
-          items={links}
-        />
+    <div className="fixed bottom-4 w-full">
+      <div className="flex items-center justify-center w-full">
+        <FloatingDock items={links} />
       </div>
     </div>
   );
